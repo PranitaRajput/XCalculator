@@ -27,7 +27,10 @@ return (
       <h1 style={{padding:'10px'}}>React calculator</h1>
 
       <div style={{marginBottom: '10px', fontSize:'24px'}} >
-      <div 
+      <input 
+       type="text"
+       value={result || input || '0'}
+       readOnly
         style={{
           border: '1px solid #000',
           borderRadius: '2px',
@@ -41,9 +44,7 @@ return (
           fontSize: '16px',
           backgroundColor: '#f5f5f5',
         }}
-      >
-        {input || ''}
-      </div>        
+      />        
       <div style={{color:'grey'}}> {result || ''}</div>
       </div>
 
