@@ -29,7 +29,7 @@ return (
       <div style={{marginBottom: '10px', fontSize:'24px'}} >
       <input 
        type="text"
-       value={result || input || '0'}
+       value={input || ' '}
        readOnly
         style={{
           border: '1px solid #000',
